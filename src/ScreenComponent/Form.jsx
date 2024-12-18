@@ -11,19 +11,19 @@ export const Form = () => {
     let token = import.meta.env.VITE_TOKEN
 
     const changehandlerartist = (event) => {
-        artist = event.target.value
+        setArtist(event.target.value)
     }
 
     const changehandleralbum = (event) => {
-        album = event.target.value
+        setAlbum(event.target.value)
     }
 
     const changehandlersongtitle = (event) => {
-        songtitle = event.target.value
+        setSongtitle(event.target.value)
     }
 
     const changehandlerreleaseyear = (event) => {
-        releaseyear = event.target.value
+        setReleaseyear(event.target.value)
     }
 
 
