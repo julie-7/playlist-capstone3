@@ -37,15 +37,22 @@ export const Form = () => {
             releaseyear
         }
         let newURL = `${url}/playlistsongs`
-        let response = await fetch(newURL,{
+        let response = await fetch(newURL, {
             method: POST,
-            headers:{
-            'Authorization': token,
-            'apikey': token,
-            'Content-Type': 'application/json'
-        },
+            headers: {
+                'Authorization': token,
+                'apikey': token,
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify(tempsongplaylist)
-    }) 
+        })
+
+        if (response.ok){
+            console.log("Object Created")
+        }else{
+            let err = response.json()
+            console.log(err)
+        }
     }
 
 
