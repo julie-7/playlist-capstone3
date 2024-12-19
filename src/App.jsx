@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Login } from './ScreenComponent/Login'
 import { Form } from './ScreenComponent/Form'
 import { Report } from './ScreenComponent/Report'
@@ -13,14 +13,14 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar/>
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/report' element={<Report />} />
           <Route path='/form' element={<Form />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   )
 }
