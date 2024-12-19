@@ -38,7 +38,7 @@ export const Form = () => {
         }
         let newURL = `${url}/playlistsongs`
         let response = await fetch(newURL, {
-            method: POST,
+            method: 'POST',
             headers: {
                 'Authorization': token,
                 'apikey': token,
