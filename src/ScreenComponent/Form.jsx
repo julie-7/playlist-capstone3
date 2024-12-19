@@ -68,22 +68,22 @@ export const Form = () => {
 
                     <div className="mb-3">
                         <label className="artist" class="form-label">Artist</label>
-                        <input type="text" class="form-control" id="artist" placeholder="enter artist"></input>
+                        <input type="text" class="form-control" onChange={changehandlerartist} placeholder="enter artist"></input>
                     </div>
 
                     <div className="mb-3">
                         <label className="album" class="form-label">Album</label>
-                        <input type="text" class="form-control" id="album" placeholder="enter album"></input>
+                        <input type="text" class="form-control" onChange={changehandleralbum} placeholder="enter album"></input>
                     </div>
 
                     <div className="mb-3">
                         <label className="songtitle" class="form-label">songtitle</label>
-                        <input type="text" class="form-control" id="songtitle" placeholder="enter songtitle"></input>
+                        <input type="text" class="form-control" onChange={changehandlersongtitle} placeholder="enter songtitle"></input>
                     </div>
 
                     <div className="mb-3">
                         <label className="releaseyear" class="form-label">releaseyear</label>
-                        <input type="text" class="form-control" id="album" placeholder="enter releaseyear"></input>
+                        <input type="text" class="form-control" onChange={changehandlerreleaseyear} placeholder="enter releaseyear"></input>
                     </div>
 
 
